@@ -19,9 +19,18 @@ echo "Creating gif with $count images"
 
 for i in $(seq 1 $count)
 do
-imagesnap raw/${i}_${1}.jpg
-   echo "Taking picture number $i"
+  imagesnap raw/${1}_${i}.jpg
+  echo "Taking picture number $i"
+  if [ $? -ne 0 ]; then
+    echo "Failed to take picture number $i"
+    exit 1
+  fi
 done
 
 convert -delay 20 raw/*.jpg out/${1}_out.gif
-rm -rf raw/*
+if [ $? -ne 0 ]; then
+  echo "Failed to create gif, keeping images for manual processing..."
+  exit 1
+fi
+
+rm -rf raw/${1}_*
