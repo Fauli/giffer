@@ -1,6 +1,6 @@
 # Giffer
 
-Giffer is a small bash script that allows you to create simple gifs using ImageMagick and imagesnap.
+Giffer (pronounced jiffer, probably?) is a small bash script that allows you to create simple gifs using ImageMagick and imagesnap.
 
 ## Prerequisites
 
@@ -19,19 +19,6 @@ To use Giffer, follow these steps:
 2. Navigate to the Giffer directory: `cd giffer`
 3. Make the script executable: `chmod +x giffer.sh`
 4. Run the script: `./giffer.sh`
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contributing
-
-Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
-
-## Acknowledgements
-
-- [ImageMagick](https://imagemagick.org/)
-- [imagesnap](https://github.com/rharder/imagesnap)
 
 ## Disclaimer
 
