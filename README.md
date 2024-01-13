@@ -1,6 +1,6 @@
 # Giffer
 
-![Logo](/logo.png){: width="100px" height="100px"}
+![Logo](/logo.png =100x100)
 
 Giffer (pronounced jiffer, probably?) is a small bash script that allows you to create simple gifs using ImageMagick and imagesnap.
 
