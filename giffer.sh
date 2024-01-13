@@ -1,14 +1,17 @@
 #!/bin/bash
-if [ $# -eq 0 ]
+
+if [ $# -eq 0 ] || [ "$1" == "-h" ]
   then
-    echo "No arguments supplied"
-    echo "Please provide name and image count"
+    echo "Usage: giffer.sh <name> [count]"
+    echo "  <name>   : Name for the gif"
+    echo "  [count]  : Number of images to capture (default: 10)"
     exit
 fi
 
 mkdir -p raw
 mkdir -p out
 
+name=$1
 count=10
 if [ -n "$2" ]
 then
